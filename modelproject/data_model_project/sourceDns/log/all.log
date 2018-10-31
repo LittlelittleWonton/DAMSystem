@@ -1,0 +1,287 @@
+2018-10-30 14:37:22,399 [Dummy-1:6612] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 14:37:22,404 [Dummy-1:6612] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-30 14:37:41,561 [Thread-2:8180] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 8550
+2018-10-30 14:37:45,821 [Thread-3:2468] [django.server:131] [basehttp:log_message] [INFO]- "POST / HTTP/1.1" 200 12841
+2018-10-30 14:37:58,797 [Thread-4:4316] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'homelist' in template 'data_model/output.html'.
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [homelist] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'Pev68bd57AeTljxpqk1hafIlNKtKabGj7xsJbVrqfG04e6PP7lO3uEWzqF0DjJsK'>, 'request': <WSGIRequest: POST '/output'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000000000DFBB158>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000ED64CF8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000E60D898>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'images': ['data_model/img/Situation_previous_month_pie.png'], 'count_call_dict': {}, 'sum_calllong_dict': {}, 'ratio_dict': {}, 'count_group_by_otherarea_dict': {}}, {}]"
+2018-10-30 14:37:58,808 [Thread-4:4316] [django.server:131] [basehttp:log_message] [INFO]- "POST /output HTTP/1.1" 200 9661
+2018-10-30 14:37:58,844 [Thread-5:8100] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_previous_month_pie.png HTTP/1.1" 200 39840
+2018-10-30 14:39:40,343 [Dummy-1:9060] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 14:39:40,349 [Dummy-1:9060] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-30 14:41:33,093 [Dummy-1:5316] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 14:41:33,096 [Dummy-1:5316] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-30 14:43:46,641 [Dummy-1:6476] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 14:43:46,645 [Dummy-1:6476] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-30 14:48:45,466 [Dummy-1:9004] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 14:48:45,472 [Dummy-1:9004] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-30 14:49:56,760 [Dummy-1:7516] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 14:49:56,768 [Dummy-1:7516] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-30 15:19:17,584 [Dummy-1:6428] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 15:19:17,588 [Dummy-1:6428] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-30 15:19:25,214 [Thread-2:8440] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 8550
+2018-10-30 15:19:32,059 [Thread-3:5784] [django.server:131] [basehttp:log_message] [INFO]- "POST / HTTP/1.1" 200 12841
+2018-10-30 15:19:46,587 [Thread-5:564] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'homelist' in template 'data_model/output.html'.
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [homelist] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R7OgvUqQmSw99HdSfX1haN5PjIf4NPCa9qLTyEEbuYik2uviWYO3ucj3WDMXWnoB'>, 'request': <WSGIRequest: POST '/output'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000000000F0ADD90>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000E51BA20>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000E566E10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'images': ['data_model/img/Situation_previous_month_pie.png'], 'count_call_dict': {}, 'sum_calllong_dict': {}, 'ratio_dict': {}, 'count_group_by_otherarea_dict': {}}, {}]"
+2018-10-30 15:19:46,595 [Thread-5:564] [django.server:131] [basehttp:log_message] [INFO]- "POST /output HTTP/1.1" 200 9661
+2018-10-30 15:19:46,629 [Thread-6:4936] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_previous_month_pie.png HTTP/1.1" 200 42871
+2018-10-30 15:21:13,619 [Thread-7:6396] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 12841
+2018-10-30 15:21:14,873 [Thread-8:7412] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'data_model.urls' from 'D:\\develop\\workplase\\modelproject\\data_model_project\\data_model\\urls.py'> (None:None) >, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'data_model.urls' from 'D:\\develop\\workplase\\modelproject\\data_model_project\\data_model\\urls.py'> (None:None) >, <RegexURLPattern output ^output$>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-10-30 15:21:14,889 [Thread-8:7412] [django.server:131] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2281
+2018-10-30 15:21:16,651 [Thread-9:4460] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 12841
+2018-10-30 15:21:17,917 [Thread-10:8664] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 12841
+2018-10-30 15:21:20,516 [Thread-11:1380] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 12841
+2018-10-30 15:21:30,492 [Thread-12:6768] [django.server:131] [basehttp:log_message] [INFO]- "POST / HTTP/1.1" 200 8592
+2018-10-30 15:21:53,661 [Thread-14:5136] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'homelist' in template 'data_model/output.html'.
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [homelist] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: '77Kcnmu67G7YKYnFR4H7Noy80FZk1kqHpqHPq6IrfMT9DLF5y5uT7NMmDAwdaSc8'>, 'request': <WSGIRequest: POST '/output'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000000000E533D08>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000E86CCF8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000E17FEB8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'images': ['data_model/img/Situation_previous_month_pie.png'], 'count_call_dict': {}, 'sum_calllong_dict': {}, 'ratio_dict': {}, 'count_group_by_otherarea_dict': {}}, {}]"
+2018-10-30 15:21:53,674 [Thread-14:5136] [django.server:131] [basehttp:log_message] [INFO]- "POST /output HTTP/1.1" 200 9661
+2018-10-30 15:21:53,705 [Thread-15:5172] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_previous_month_pie.png HTTP/1.1" 200 45289
+2018-10-30 15:22:50,624 [Thread-16:7908] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'homelist' in template 'data_model/output.html'.
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [homelist] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'Bw6skqzUKD72AuAaA4Iw53GRsAGOsQZeTP35naNfSJTdthSAh5vipsU55vdHBoLF'>, 'request': <WSGIRequest: POST '/output'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000000000E533F28>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000F56E390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000E509E80>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'images': ['data_model/img/Situation_in_the_last_few_months_plot.png', 'data_model/img/Situation_in_the_first_six_months_plot.png', 'data_model/img/Situation_in_the_first_three_months_plot.png', 'data_model/img/Situation_previous_month_plot.png', 'data_model/img/Situation_in_the_last_few_months_bar.png', 'data_model/img/Situation_in_the_first_six_months_bar.png', 'data_model/img/Situation_in_the_first_three_months_bar.png', 'data_model/img/Situation_previous_month_bar.png', 'data_model/img/Situation_in_the_last_few_months_pie.png', 'data_model/img/Situation_in_the_first_six_months_pie.png', 'data_model/img/Situation_in_the_first_three_months_pie.png', 'data_model/img/Situation_previous_month_pie.png', 'data_model/img/Situation_in_the_last_few_months_scatter.png', 'data_model/img/Situation_in_the_first_six_months_scatter.png', 'data_model/img/Situation_in_the_first_three_months_scatter.png', 'data_model/img/Situation_previous_month_scatter.png'], 'count_call_dict': {'all': 446, 'one_month': 98, 'three_months': 303, 'six_months': 446}, 'sum_calllong_dict': {'all': 34393, 'one_month': 7000, 'three_months': 21745, 'six_months': 34393}, 'ratio_dict': {'all': '27.55%', 'one_month': '26.70%', 'three_months': '26.79%', 'six_months': '27.55%'}, 'count_group_by_otherarea_dict': {'all': [{'E-5': 446}], 'one_month': [{'E-5': 98}], 'three_months': [{'E-5': 303}], 'six_months': [{'E-5': 446}]}}, {}]"
+2018-10-30 15:22:50,687 [Thread-16:7908] [django.server:131] [basehttp:log_message] [INFO]- "POST /output HTTP/1.1" 200 14168
+2018-10-30 15:22:50,715 [Thread-17:6080] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_last_few_months_plot.png HTTP/1.1" 200 37882
+2018-10-30 15:22:50,728 [Thread-18:6456] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_six_months_plot.png HTTP/1.1" 200 40847
+2018-10-30 15:22:50,775 [Thread-22:4048] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_six_months_bar.png HTTP/1.1" 200 22423
+2018-10-30 15:22:50,775 [Thread-21:7440] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_last_few_months_bar.png HTTP/1.1" 200 22963
+2018-10-30 15:22:50,779 [Thread-24:8164] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_previous_month_bar.png HTTP/1.1" 200 23827
+2018-10-30 15:22:50,779 [Thread-19:6732] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_three_months_plot.png HTTP/1.1" 200 37576
+2018-10-30 15:22:50,780 [Thread-23:7352] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_three_months_bar.png HTTP/1.1" 200 21572
+2018-10-30 15:22:50,783 [Thread-20:7760] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_previous_month_plot.png HTTP/1.1" 200 56233
+2018-10-30 15:22:50,844 [Thread-26:7380] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_six_months_pie.png HTTP/1.1" 200 59182
+2018-10-30 15:22:50,861 [Thread-25:7860] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_last_few_months_pie.png HTTP/1.1" 200 61364
+2018-10-30 15:22:50,861 [Thread-27:4652] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_three_months_pie.png HTTP/1.1" 200 46777
+2018-10-30 15:22:50,862 [Thread-28:7316] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_previous_month_pie.png HTTP/1.1" 200 98717
+2018-10-30 15:22:50,880 [Thread-29:7588] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_last_few_months_scatter.png HTTP/1.1" 200 23271
+2018-10-30 15:22:50,887 [Thread-30:7920] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_six_months_scatter.png HTTP/1.1" 200 24018
+2018-10-30 15:22:50,923 [Thread-32:3260] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_previous_month_scatter.png HTTP/1.1" 200 23809
+2018-10-30 15:22:50,931 [Thread-31:564] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_three_months_scatter.png HTTP/1.1" 200 20704
+2018-10-30 15:24:04,482 [Thread-33:6000] [django.server:131] [basehttp:log_message] [INFO]- "POST / HTTP/1.1" 200 12841
+2018-10-30 15:25:17,325 [Thread-35:7260] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 12841
+2018-10-30 15:25:17,649 [Thread-36:6780] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 12841
+2018-10-30 15:25:18,884 [Thread-37:9156] [django.server:131] [basehttp:log_message] [INFO]- "POST / HTTP/1.1" 200 8550
+2018-10-30 15:26:39,766 [Thread-39:1804] [django.server:131] [basehttp:log_message] [INFO]- "POST / HTTP/1.1" 200 12841
+2018-10-30 15:26:52,938 [Thread-40:6040] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'homelist' in template 'data_model/output.html'.
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [homelist] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'layTUfsMkZpoRdNncnLiDY4Fpp29OOffDtvwXZG7s5bzK05NToy4XniT2kz2Xm1G'>, 'request': <WSGIRequest: POST '/output'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000000000E533D08>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000E386E80>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000F53B080>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'images': ['data_model/img/Situation_in_the_first_three_months_pie.png'], 'count_call_dict': {}, 'sum_calllong_dict': {}, 'ratio_dict': {}, 'count_group_by_otherarea_dict': {}}, {}]"
+2018-10-30 15:26:52,945 [Thread-40:6040] [django.server:131] [basehttp:log_message] [INFO]- "POST /output HTTP/1.1" 200 9672
+2018-10-30 15:26:52,980 [Thread-41:3452] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_three_months_pie.png HTTP/1.1" 200 37220
+2018-10-30 15:27:01,575 [Thread-42:5496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'homelist' in template 'data_model/output.html'.
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'homelist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\develop\workplase\modelproject\model_env\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [homelist] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'IR4HpVfDMtjce4AQf7qWebWJlRZ5yeUl0a1ksFtYUz5n7RSgW8dIyAaXYMwYHMGM'>, 'request': <WSGIRequest: POST '/output'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000000000DF781E0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000E849358>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000E38C2E8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'images': ['data_model/img/Situation_in_the_first_three_months_pie.png'], 'count_call_dict': {}, 'sum_calllong_dict': {}, 'ratio_dict': {}, 'count_group_by_otherarea_dict': {}}, {}]"
+2018-10-30 15:27:01,586 [Thread-42:5496] [django.server:131] [basehttp:log_message] [INFO]- "POST /output HTTP/1.1" 200 9672
+2018-10-30 15:27:01,605 [Thread-43:4312] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/data_model/img/Situation_in_the_first_three_months_pie.png HTTP/1.1" 200 37220
+2018-10-30 17:29:49,419 [Dummy-1:8736] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-30 17:29:49,422 [Dummy-1:8736] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
