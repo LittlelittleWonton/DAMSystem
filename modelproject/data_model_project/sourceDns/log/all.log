@@ -285,3 +285,8 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [homelist] in "
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 2018-10-30 17:29:49,422 [Dummy-1:8736] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-10-31 15:28:32,699 [Dummy-1:8356] [django.db.backends:90] [utils:execute] [DEBUG]- (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2018-10-31 15:28:32,704 [Dummy-1:8356] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
