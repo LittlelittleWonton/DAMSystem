@@ -6,7 +6,7 @@ from util.samplerange import Samplerange_simple
 import datetime
 import logging
 
-logger = logging.getLogger('scripts')
+#logger = logging.getLogger('scripts')
 def _count_call(calllist ,sample_range_dict ,last_step_list ):
         '''
         计数操作
@@ -26,7 +26,8 @@ def _count_call(calllist ,sample_range_dict ,last_step_list ):
                         count_list.append(call)
                 result_dict[key] = len(count_list)
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         #print(result_dict)
         return result_dict
 
@@ -50,7 +51,8 @@ def _sum_calllong(calllist ,sample_range_dict ,last_step_list ):
                         sum+=int(call['calllong'])
                 result_dict[key] = copy.deepcopy(sum)
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         #print(result_dict)
         return result_dict
 
@@ -82,7 +84,8 @@ def _ratio(calllist ,sample_range_dict ,last_step_list ):
                 ratio = str('%.02f'%(true_ratio*100))+'%'
                 result_dict[key] = copy.deepcopy(ratio)
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         #print(result_dict)
         return result_dict
 
@@ -108,7 +111,8 @@ def _get_sample_range_otherarealist(sample_range_dict , last_step_list ):
                 result_dict[key] = copy.deepcopy(otherarealist)
                 #print('result_dict',result_dict)
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         return result_dict
 
 def _count_group_by_otherarea(calllist ,sample_range_dict ,last_step_list):
@@ -139,7 +143,8 @@ def _count_group_by_otherarea(calllist ,sample_range_dict ,last_step_list):
                     all_area_list.append(areadict)
                 result_dict[key] = copy.deepcopy(all_area_list)
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         #print(result_dict)
         return result_dict
 
@@ -426,7 +431,8 @@ def pic_calculate(last_pic_step_list,legend_list ,sample_rangelist ,calllist , o
                 x['y'] = y
                 result_dict['one_month'] = x
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     return result_dict
 
 def get_day_range(start , end):
@@ -445,7 +451,8 @@ def get_day_range(start , end):
             result_list.append(temp_time.strftime('%Y-%m-%d'))
             temp_time=temp_time+datetime.timedelta(days=1)
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     return result_list
 
 def get_month_range(start , end):
@@ -466,7 +473,8 @@ def get_month_range(start , end):
                 result_list.append(temp_time1.strftime('%Y-%m-%d')[:7])
             temp_time = temp_time1
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     return result_list
 
 def judge_list_property(legend_list , otherarealist):

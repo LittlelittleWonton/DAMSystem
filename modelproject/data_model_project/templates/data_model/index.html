@@ -1,253 +1,59 @@
+{% extends "base.html" %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Data Model Analysis System</title>
+{% block head%}
+<div class="container" style="min-height:50px">
+<header></header>
 
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- css -->
-    
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="{% static 'data_model/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'data_model/css/pace.css' %}">
-    <link rel="stylesheet" href="{% static 'data_model/css/custom.css' %}">
-	<!-- js -->
-    <script src="{% static 'data_model/js/jquery-2.1.3.min.js' %}"></script>
-    <script src="{% static 'data_model/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'data_model/js/pace.min.js' %}"></script>
-    <script src="{% static 'data_model/js/modernizr.custom.js' %}"></script>
-	<style>
-	.bs-example-1::before {
-    content: "Input-1：";
-}
-	.bs-example-2::before {
-    content: "Input-2：";
-}
-	.bs-example-3::before {
-    content: "Output-3：";
-}
-.bs-example {
-    position: relative;
-    padding: 15px 10px 0px 10px;
-    margin: 0 10px 0px;
-    border-color: #e5e5e5 #eee #eee;
-    border-style: solid;
-    border-width: 1px 0;
-    -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
-    box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
-}
-.cellplase{
-    text-align: left;
-    width: 100%;
-    position: relative;
-    padding: 15px 10px 0px 0px;
-    margin: 20px 200px 0px 0px;
-}
-.a-class {
-    color: #333;
-}
-
-.a-class:hover, .a-class:focus {
-    text-decoration: none;
-    color: #000;
-}
-
-	</style>
-</head>
-
-<body>
-<div class="container">
-    <header id="site-header">
-        <div class="row">
-            <div class="col-md-4 col-sm-5 col-xs-8">
-                <div class="logo">
-                    <h1><a href="/">DMA System</a></h1>
-                </div>
-            </div><!-- col-md-4 -->
-            <div class="col-md-8 col-sm-7 col-xs-4">
-                <nav class="main-nav" role="navigation">
-                    
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-						<li class="cl-effect-11"><a href="#" class="xiugaibtn" data-hover="Browser">Browser</a></li>
-                            <li class="cl-effect-11"><a href="#" class="upload-btn" data-hover="Upload">Upload</a></li>
-                            <li class="cl-effect-11"><a href="#" class="start-btn" >Start</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 </div>
-<div class="content-body">
-<div class="container">
-<div class="row">
-<main>
-<form action="output" method="POST">
+{% endblock head%}
+
+{% block content %}
+
+<table class="table  table-hover " >
+    <tbody>
+    <tr class="text-center" >
+        <td style="font-size:80px; vertical-align: middle !important;text-align: center;" height="300px" class="xiugaibtn">
+            Browser
+        </td>
+    </tr>
+    <tr class="text-center span-class" id = 'upload'>
+        <td style="font-size:80px;vertical-align: middle !important;text-align: center;" height="300px"  class="upload-btn">
+            Upload
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="upload" method="POST" enctype="multipart/form-data">
 {% csrf_token %}
-<div class = "bs-example-1">
-<div class="bs-example" data-example-id="simple-s"> 
-
-  <div class="table-responsive">
-  <table class="table table-condensed">
-    <tbody>
-         <td><strong>通话时段</strong></td>
-         <td><input type="checkbox" value="all" name="daytime" >全部</td>
-		 <td><input type="checkbox" value="early_morning" name="daytime" >凌晨</td>
-		 <td><input type="checkbox" value="morning" name="daytime" >上午</td>
-		 <td><input type="checkbox" value="noon" name="daytime" >中午</td>
-		 <td><input type="checkbox" value="afternoon" name="daytime" >下午</td>
-		 <td><input type="checkbox" value="early_night" name="daytime" >晚上</td>
-		 <td><input type="checkbox" value="night" name="daytime" >夜间</td>
-    </tbody>
-    <tbody>
-         <td><strong>通话类型</strong></td>
-         <td><input type="checkbox" value="all" name="calltype" >全部</td>
-		 <td><input type="checkbox" value="calling" name="calltype" >主叫</td>
-		 <td><input type="checkbox" value="called" name="calltype" >被叫</td>
-    </tbody>
-	<tbody>
-         <td><strong>通话所在地</strong></td>
-         <td><input type="checkbox" value="all" name="landtype" >全部</td>
-		 <td><input type="checkbox" value="local" name="landtype" >本地</td>
-		 <td><input type="checkbox" value="allopatry" name="landtype" >异地</td>
-    </tbody>
-	<tbody>
-         <td><strong>号码类型</strong></td>
-         <td><input type="checkbox" value="all" name="phonetype" >全部</td>
-		 <td><input type="checkbox" value="mobile" name="phonetype" >手机</td>
-		 <td><input type="checkbox" value="tel" name="phonetype" >座机</td>
-    </tbody>
-	<tbody>
-         <td><strong>号码性质</strong></td>
-         <td><input type="checkbox" value="all" name="phoneproperty" >全部</td>
-		 <td><input type="checkbox" value="网贷" name="phoneproperty" >网贷</td>
-		 <td><input type="checkbox" value="银行" name="phoneproperty" >银行</td>
-		 <td><input type="checkbox" value="未知" name="phoneproperty" >未知</td>
-
-    </tbody>
-	<tbody id="ps" >
-         <td><strong>对方号码归属地</strong></td>
-         <td><input type="checkbox" value="all" name="otherarealist" >全部</td>
-		 {% for  home in homelist %}
-		 <td><input type="checkbox" value="{{home}}" name="otherarealist" >{{home}}</td>
-         {% empty %}
-         <td>无归属地</td>
-		 {% endfor %}
-		 {#<td><input type="checkbox" value="place_2" name="place_belonging" >归属地2</td>#}
-		 {#<td><input type="checkbox" value="place_3" name="place_belonging" >归属地3</td>#}
-    </tbody>
-	
-  </table>
-</div>
- </div>
-</div>
-<br><br>
-<div class = "bs-example-2">
-<div class="bs-example" data-example-id="simple-s"> 
-
-  <div class="table-responsive">
-  <table class="table table-condensed">
-    <tbody>
-         <td><strong>样本范围</strong></td>
-         <td><input type="checkbox" value="all" name="sample_range" >全量</td>
-		 <td><input type="checkbox" value="one_month" name="sample_range" >一个月</td>
-		 <td><input type="checkbox" value="three_months" name="sample_range" >三个月</td>
-		 <td><input type="checkbox" value="six_months" name="sample_range" >六个月</td>
-    </tbody>
-
-	<tbody>
-         <td><strong>制图分类</strong></td>
-         <td><input type="checkbox" value="plot" name="pic_category" >折线</td>
-		 <td><input type="checkbox" value="bar" name="pic_category" >柱状</td>
-		 <td><input type="checkbox" value="pie" name="pic_category" >饼图</td>
-		 <td><input type="checkbox" value="scatter" name="pic_category" >散点</td>
-    </tbody>
-	<tbody>
-         <td><strong>计算方式</strong></td>
-         <td><input type="checkbox" value="count_call" name="calculation" >通话计数</td>
-		 <td><input type="checkbox" value="sum_calllong" name="calculation" >时长求和</td>
-		 <td><input type="checkbox" value="ratio" name="calculation" >占比</td>
-		 <td><input type="checkbox" value="count_group_by_otherarea" name="calculation" >归属地分组计数</td>
-    </tbody>
-	
-  </table>
-</div>
- </div>
-</div>
-<!--<input type="submit" class="input-class" style="opacity: 0"/>-->
-<button style="opacity: 0"class="input-class"></button>
-</form>
-<br><br>
-{% block output %}
-
-{% endblock output %}
-
-</main>
-</div>
-</div>
- 
-</div>
-<footer id="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="copyright">&copy 2018 - ZhaoZhao
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Mobile Menu -->
-<div class="overlay overlay-hugeinc">
-    <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
-        </ul>
-    </nav>
-</div>
-<form action="/" method="POST" enctype="multipart/form-data">
-{% csrf_token %}
-<input type="file" class="filess"  name = "myfile" style="opacity: 0"/>
+<input type="file" class="filess" multiple="multiple" name = "myfile" style="opacity: 0"/>
 <input type="submit" class = "submit-btn" style="opacity: 0"/>
 </form>
-<script src="{% static 'data_model/js/script.js' %}"></script>
-<script>
+{% endblock content %}
+
+{% block script%}
 $(".xiugaibtn").click(function () {
             $(".filess").click();
         });
 $(".upload-btn").click(function () {
             $(".submit-btn").click();
         });
-$(".start-btn").click(function () {
-            $(".input-class").click();
-        });
 
-<!--$(function(){-->
-                <!--var v = $.cookie('otherarealist', {'path': "/"});-->
-                <!--console.log(v)-->
-                <!--$('#ps').val(v);-->
-        <!--});-->
-<!--function getHomeList(ths){-->
-            <!--var v = $(ths).val();-->
-            <!--console.log(v);-->
-            <!--$.cookie('otherarealist',v, {'path': "/"});-->
-            <!--location.reload();-->
-        <!--}-->
+ $('#upload').click(function(){
+              $.ajax({
+                  url:"/",
+                  type:"POST",
+                  data:{
+                      "csrfmiddlewaretoken":$('[name="csrfmiddlewaretoken"]').val()
+                  },
+                  success:function(data){
+                      var dataObj = JSON.parse(data);
+                      console.log(dataObj["msg"]);
+                      msg = dataObj["msg"];
 
-</script>
+                      $('header').html('<h1>'+msg+'</h1>');
+                  }
+              });
+          });
 
-</body>
-</html>
-
-
+{% endblock script%}

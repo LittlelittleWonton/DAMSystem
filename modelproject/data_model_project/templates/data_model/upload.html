@@ -1,10 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block head%}
+<div class="container">
+    <header id="site-header">
+        <div class="row">
+            <div class="col-md-4 col-sm-5 col-xs-8">
+                <div class="logo" style="width:600px">
+                    <h1><a href="/">DMA System<small> home</small></a></h1>
+                </div>
+            </div><!-- col-md-4 -->
+            <!--<div class="col-md-8 col-sm-7 col-xs-4">-->
+                <!--<nav class="main-nav" role="navigation">-->
+
+                    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                        <!--<ul class="nav navbar-nav navbar-right">-->
+                            <!--<li class="cl-effect-11"><a href="#" class="start-btn" >Start</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</nav>-->
+                    <!--</div>-->
+                </div>
+    </header>
+</div>
+{% endblock head %}
+{% block content%}
+{% block upload %}
+
+<div class = "bs-example-1">
+<div class="bs-example" data-example-id="simple-s">
+
+  <div class="table-responsive">
+<form>
+    {% csrf_token %}
+  <table class="table table-condensed">
+    <tbody>
+         <td><strong>数据选择</strong></td>
+         {% for key , value in filenames.items %}
+         <td><input type="radio" value="{{value}}" name="datachoice" class="datachoice">{{key}}</td>
+         {% empty %}
+         <td>请上传文件</td>
+         {% endfor %}
+    </tbody>
+
+  </table>
+</form>
+{% endblock upload %}
+      <script>
+          $('.datachoice').click(function(){
+              $.ajax({
+                  url:"upload",
+                  type:"POST",
+                  data:{
+                      "f_time":$('input:radio[name="datachoice"]:checked').val(),
+                      "csrfmiddlewaretoken":$('[name="csrfmiddlewaretoken"]').val()
+                  },
+                  success:function(data){
+                      var dataObj = JSON.parse(data);
+                      console.log(dataObj["otherarelist"]);
+                      otherarealist = dataObj["otherarelist"];
+                      var tableContent = '<td><strong>对方号码归属地</strong></td><td><input type="checkbox" value="all" name="otherarealist" >全部</td>';
+                      for (var i = 0 ; i <otherarealist.length ; i++ ){
+                          tableContent+='<td><input type="checkbox" value="';
+                          tableContent+=otherarealist[i];
+                          tableContent+='" name="otherarealist" >';
+                          tableContent+=otherarealist[i];
+                          tableContent+='</td>';
+                      }
+                      $("#ps").html(tableContent);
+                  }
+              });
+          });
+      </script>
+
+</div>
+ </div>
+</div>
+<br><br>
+<form action="output" method="POST">
+{% csrf_token %}
+<div class = "bs-example-2">
+<div class="bs-example" data-example-id="simple-s">
+
+  <div class="table-responsive">
+  <table class="table table-condensed">
+    <tbody>
+         <td><strong>通话时段</strong></td>
+         <td><input type="checkbox" value="all" name="daytime" >全部</td>
+		 <td><input type="checkbox" value="early_morning" name="daytime" >凌晨</td>
+		 <td><input type="checkbox" value="morning" name="daytime" >上午</td>
+		 <td><input type="checkbox" value="noon" name="daytime" >中午</td>
+		 <td><input type="checkbox" value="afternoon" name="daytime" >下午</td>
+		 <td><input type="checkbox" value="early_night" name="daytime" >晚上</td>
+		 <td><input type="checkbox" value="night" name="daytime" >夜间</td>
+    </tbody>
+    <tbody>
+         <td><strong>通话类型</strong></td>
+         <td><input type="checkbox" value="all" name="calltype" >全部</td>
+		 <td><input type="checkbox" value="calling" name="calltype" >主叫</td>
+		 <td><input type="checkbox" value="called" name="calltype" >被叫</td>
+    </tbody>
+	<tbody>
+         <td><strong>通话所在地</strong></td>
+         <td><input type="checkbox" value="all" name="landtype" >全部</td>
+		 <td><input type="checkbox" value="local" name="landtype" >本地</td>
+		 <td><input type="checkbox" value="allopatry" name="landtype" >异地</td>
+    </tbody>
+	<tbody>
+         <td><strong>号码类型</strong></td>
+         <td><input type="checkbox" value="all" name="phonetype" >全部</td>
+		 <td><input type="checkbox" value="mobile" name="phonetype" >手机</td>
+		 <td><input type="checkbox" value="tel" name="phonetype" >座机</td>
+    </tbody>
+	<tbody>
+         <td><strong>号码性质</strong></td>
+         <td><input type="checkbox" value="all" name="phoneproperty" >全部</td>
+		 <td><input type="checkbox" value="网贷" name="phoneproperty" >网贷</td>
+		 <td><input type="checkbox" value="银行" name="phoneproperty" >银行</td>
+		 <td><input type="checkbox" value="未知" name="phoneproperty" >未知</td>
+
+    </tbody>
+	<tbody id="ps" >
+         <td><strong>对方号码归属地</strong></td>
+         <td><input type="checkbox" value="all" name="otherarealist" >全部</td>
+		 <!--{% for  home in homelist %}-->
+		 <!--<td><input type="checkbox" value="{{home}}" name="otherarealist" >{{home}}</td>-->
+         <!--{% empty %}-->
+         <td>无归属地</td>
+		 <!--{% endfor %}-->
+		 <!--{#<td><input type="checkbox" value="place_2" name="place_belonging" >归属地2</td>#}-->
+		 <!--{#<td><input type="checkbox" value="place_3" name="place_belonging" >归属地3</td>#}-->
+    </tbody>
+
+  </table>
+</div>
+ </div>
+</div>
+<br><br>
+<div class = "bs-example-3">
+<div class="bs-example" data-example-id="simple-s">
+
+  <div class="table-responsive">
+  <table class="table table-condensed">
+    <tbody>
+         <td><strong>样本范围</strong></td>
+         <td><input type="checkbox" value="all" name="sample_range" >全量</td>
+		 <td><input type="checkbox" value="one_month" name="sample_range" >一个月</td>
+		 <td><input type="checkbox" value="three_months" name="sample_range" >三个月</td>
+		 <td><input type="checkbox" value="six_months" name="sample_range" >六个月</td>
+    </tbody>
+
+	<tbody>
+         <td><strong>制图分类</strong></td>
+         <td><input type="checkbox" value="plot" name="pic_category" >折线</td>
+		 <td><input type="checkbox" value="bar" name="pic_category" >柱状</td>
+		 <td><input type="checkbox" value="pie" name="pic_category" >饼图</td>
+		 <td><input type="checkbox" value="scatter" name="pic_category" >散点</td>
+    </tbody>
+	<tbody>
+         <td><strong>计算方式</strong></td>
+         <td><input type="checkbox" value="count_call" name="calculation" >通话计数</td>
+		 <td><input type="checkbox" value="sum_calllong" name="calculation" >时长求和</td>
+		 <td><input type="checkbox" value="ratio" name="calculation" >占比</td>
+		 <td><input type="checkbox" value="count_group_by_otherarea" name="calculation" >归属地分组计数</td>
+    </tbody>
+
+  </table>
+</div>
+ </div>
+</div>
+<!--<input type="submit" class="input-class" style="opacity: 0"/>-->
+<button style="opacity: 0" class="input-class"></button>
+</form>
+<button style="float:right; width:200px; background-color:	#DCDCDC"  type="button" class="btn btn-default btn-lg start-btn">Start</button>
+<br><br>
+
+{% block output %}
+
+{% endblock output %}
+
+{% endblock content %}
+
+{% block script%}
+$(".xiugaibtn").click(function () {
+            $(".filess").click();
+        });
+$(".upload-btn").click(function () {
+            $(".submit-btn").click();
+        });
+$(".start-btn").click(function () {
+            $(".input-class").click();
+        });
+
+{% endblock script%}

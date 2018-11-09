@@ -13,7 +13,7 @@ import numpy as np
 import os
 import logging
 
-logger = logging.getLogger('scripts')
+#logger = logging.getLogger('scripts')
 matplotlib.rcParams['font.sans-serif']=['SimHei']   # 用黑体显示中文
 matplotlib.rcParams['axes.unicode_minus']=False     # 正常显示负号
 
@@ -54,7 +54,8 @@ def draw_plot(xn_dict,calllist):
         plt.axis('off')
         plt.close()
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     return 'data_model/img/%s_plot.png'%title
 
 def draw_bar(xn_dict,calllist):
@@ -94,7 +95,8 @@ def draw_bar(xn_dict,calllist):
         plt.axis('off')
         plt.close()
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     return 'data_model/img/%s_bar.png' % title
 
 def draw_scatter(xn_dict,calllist):
@@ -124,7 +126,8 @@ def draw_scatter(xn_dict,calllist):
         plt.axis('off')
         plt.close()
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     return 'data_model/img/%s_scatter.png' % title
 
 def draw_pie(xn_dict , calllist):
@@ -140,7 +143,7 @@ def draw_pie(xn_dict , calllist):
         xlist = xn_dict['xlist']
         group_labels = [y['label']for y in xn_dict['y']['ylist'] ]
         ylist = [y['y_array'] for y in xn_dict['y']['ylist']]
-        print('ylist' , ylist)
+        #print('ylist' , ylist)
         fig=plt.figure(0, figsize=(9 * 1.2, 6 * 1.2))
         explode = []  # 各部分的突出zhi
 
@@ -174,7 +177,8 @@ def draw_pie(xn_dict , calllist):
         plt.axis('off')
         plt.close()
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     return 'data_model/img/%s_pie.png'%title
 
 pic_dict={'plot':draw_plot,'bar':draw_bar,'pie':draw_pie,'scatter':draw_scatter}
@@ -194,7 +198,8 @@ def draw_pic(pic_categorylist , calllist , sample_range_xn_dict):
             for img in img_list:
                 os.remove(os.path.join(img_path , img))
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
     result_list = []
 
     for pic in pic_categorylist:

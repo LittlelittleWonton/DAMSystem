@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2d0507e-0359-47f0-a3fe-381917f8c7fc" name="Default Changelist" comment="" />
+    <list default="true" id="b2d0507e-0359-47f0-a3fe-381917f8c7fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_model/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_model/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_three_months_pie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_model/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_model/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_model/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_model/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_model_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_model_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourceDns/log/all.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourceDns/log/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourceDns/log/script.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/data_model/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/data_model/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/data_model/output.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/data_model/output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/data_model/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/data_model/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/calculate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/matplotpaint.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/matplotpaint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/parsedata.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/parsedata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/samplerange.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/samplerange.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,108 +33,62 @@
     <session id="-1573643486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="10" />
+          <entry key="html" value="17" />
           <entry key="png" value="14" />
-          <entry key="py" value="29" />
+          <entry key="py" value="42" />
           <entry key="struct" value="4" />
-          <entry key="txt" value="16" />
+          <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="10" />
+          <entry key="HTML" value="17" />
           <entry key="Image" value="14" />
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="29" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="Python" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="766" />
-          <entry key="py" value="16639" />
+          <entry key="html" value="2625" />
+          <entry key="py" value="20476" />
           <entry key="struct" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="766" />
+          <entry key="HTML" value="2625" />
           <entry key="PLAIN_TEXT" value="200" />
-          <entry key="Python" value="16639" />
+          <entry key="Python" value="20476" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/matplotpaint.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="142" selection-start-line="142" selection-end-line="142" />
-              <folding>
-                <element signature="e#42#57#0" expanded="true" />
-                <marker date="1540891786624" expanded="true" signature="6116:6751" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/parsedata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1828">
-              <caret line="143" column="30" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="30" />
-              <folding>
-                <element signature="e#42#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/data_model/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="133" column="19" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/samplerange.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1154">
-              <caret line="240" column="104" selection-start-line="240" selection-start-column="104" selection-end-line="240" selection-end-column="104" />
-              <folding>
-                <element signature="e#42#64#0" expanded="true" />
-                <element signature="e#555#820#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_model/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2904">
-              <caret line="88" column="27" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
+            <state relative-caret-position="263">
+              <caret line="140" column="14" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="14" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -122,33 +97,80 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/calculate.py">
+        <entry file="file://$PROJECT_DIR$/templates/data_model/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="165">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#42#53#0" expanded="true" />
-                <element signature="e#6094#10809#0" />
-                <element signature="e#6182#7234#0" />
-                <element signature="e#7318#8391#0" />
-                <element signature="e#8477#9560#0" />
-                <element signature="e#9649#10809#0" />
-                <element signature="e#10837#15970#0" />
-                <element signature="e#10978#12149#0" />
-                <element signature="e#12233#13425#0" />
-                <element signature="e#13511#14713#0" />
-                <element signature="e#14796#15970#0" />
-                <marker date="1540883953623" expanded="true" signature="18750:19300" ph="..." />
+                <element signature="n#style#0;n#input#1;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_model/urls.py">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+            <state relative-caret-position="431">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/parsedata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="17" />
+              <folding>
+                <element signature="e#42#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/data_model/upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+              <folding>
+                <element signature="e#6128#6187#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/matplotpaint.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/calculate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="453" column="13" selection-start-line="453" selection-start-column="8" selection-end-line="453" selection-end-column="13" />
+              <folding>
+                <element signature="e#42#53#0" expanded="true" />
+                <marker date="1541657429961" expanded="true" signature="18915:19465" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/samplerange.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="761">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="e#42#64#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,17 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/data_model/output.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/last_pic_step_list.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11680" selection-end-column="64904" />
+            <state relative-caret-position="297">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -174,8 +187,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3926">
-              <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
+            <state relative-caret-position="5775">
+              <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -185,8 +198,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -194,39 +207,54 @@
     <findStrings>
       <find>a</find>
       <find>re</find>
-      <find>print</find>
       <find>recipe</find>
+      <find>calllist</find>
+      <find>TEMPLATES</find>
+      <find>logger</find>
+      <find>datach</find>
+      <find>ps</find>
+      <find>print</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data_model/urls.py" />
         <option value="$PROJECT_DIR$/util/conf.py" />
         <option value="$PROJECT_DIR$/result.txt" />
-        <option value="$PROJECT_DIR$/templates/data_model/output.html" />
         <option value="$PROJECT_DIR$/struct" />
-        <option value="$PROJECT_DIR$/templates/data_model/index.html" />
-        <option value="$PROJECT_DIR$/data_model_project/settings.py" />
-        <option value="$PROJECT_DIR$/data_model/views.py" />
-        <option value="$PROJECT_DIR$/util/calculate.py" />
-        <option value="$PROJECT_DIR$/util/filter.py" />
-        <option value="$PROJECT_DIR$/util/parsedata.py" />
+        <option value="$PROJECT_DIR$/templates/data_model/base.html" />
+        <option value="$PROJECT_DIR$/data_model/urls.py" />
+        <option value="$PROJECT_DIR$/data_model/__init__.py" />
+        <option value="$PROJECT_DIR$/data_model/models.py" />
         <option value="$PROJECT_DIR$/util/samplerange.py" />
+        <option value="$PROJECT_DIR$/util/filter.py" />
+        <option value="$PROJECT_DIR$/util/calculate.py" />
+        <option value="$PROJECT_DIR$/data_model_project/settings.py" />
+        <option value="$PROJECT_DIR$/templates/data_model/upload.html" />
+        <option value="$PROJECT_DIR$/templates/data_model/output.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/data_model/index.html" />
+        <option value="$PROJECT_DIR$/data_model/views.py" />
         <option value="$PROJECT_DIR$/util/matplotpaint.py" />
+        <option value="$PROJECT_DIR$/util/parsedata.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1032" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,6 +281,11 @@
             <path>
               <item name="data_model_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="data_model_project" type="462c0819:PsiDirectoryNode" />
+              <item name="myfile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data_model_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_model_project" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -266,17 +299,27 @@
               <item name="data_model_project" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="data_model_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_model_project" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="元数据" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../all/crawler/DistributedSpider" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\develop\workplase\modelproject\data_model_project\templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -404,9 +447,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29006773" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14002146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -426,6 +469,27 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119098715" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23250565" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39954853" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -457,24 +521,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util/xxxx_scatter.png" />
     <entry file="file://$PROJECT_DIR$/util/xxxx_pie.png" />
-    <entry file="file://$PROJECT_DIR$/util/元数据/陈鸿雅_18102801355.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret column="4908" selection-start-column="4908" selection-end-column="4908" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/元数据/陈鸿章_18850116989.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret column="2501" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/元数据/陈厚宇_13049362947.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -485,54 +535,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="75" selection-start-column="75" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calllist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret column="1686" selection-start-column="1686" selection-end-column="1686" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/元数据/陈虎_17721396513.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret column="277" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_previous_month_bar.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_last_few_months_bar.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_three_months_bar.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_six_months_bar.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_previous_month_plot.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_last_few_months_plot.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_three_months_plot.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_six_months_plot.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phone_property.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt" />
+    <entry file="file://$PROJECT_DIR$/calllist.txt" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_previous_month_bar.png" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_last_few_months_bar.png" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_three_months_bar.png" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_six_months_bar.png" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_previous_month_plot.png" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_last_few_months_plot.png" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_three_months_plot.png" />
+    <entry file="file://$PROJECT_DIR$/data_model/static/data_model/img/Situation_in_the_first_six_months_plot.png" />
+    <entry file="file://$PROJECT_DIR$/phone_property.txt" />
     <entry file="file://$PROJECT_DIR$/struct">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -540,38 +553,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/last_pic_step_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11680" selection-end-column="64904" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newcalllist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret column="18936" selection-start-column="18936" selection-end-column="18936" />
-          <caret column="17504" selection-start-column="17504" selection-end-column="17504" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_model/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2904">
-          <caret line="88" column="27" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/data_model/output.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/newcalllist.txt" />
+    <entry file="file://$PROJECT_DIR$/last_pic_step_list.txt" />
     <entry file="file://$PROJECT_DIR$/data_model/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -579,79 +562,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/calculate.py">
+    <entry file="file://$PROJECT_DIR$/util/元数据/陈虎_17721396513.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state>
+          <caret column="277" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/元数据/陈鸿雅_18102801355.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="677" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/元数据/陈厚宇_13049362947.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_model/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding>
-            <element signature="e#42#53#0" expanded="true" />
-            <element signature="e#6094#10809#0" />
-            <element signature="e#6182#7234#0" />
-            <element signature="e#7318#8391#0" />
-            <element signature="e#8477#9560#0" />
-            <element signature="e#9649#10809#0" />
-            <element signature="e#10837#15970#0" />
-            <element signature="e#10978#12149#0" />
-            <element signature="e#12233#13425#0" />
-            <element signature="e#13511#14713#0" />
-            <element signature="e#14796#15970#0" />
-            <marker date="1540883953623" expanded="true" signature="18750:19300" ph="..." />
+            <marker date="1541646343630" expanded="true" signature="1500:1716" ph="..." />
+            <marker date="1541646343630" expanded="true" signature="1797:1802" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_model_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+          <folding>
+            <element signature="e#3461#3474#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/filter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3926">
-          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
+        <state relative-caret-position="5775">
+          <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_model_project/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/data_model/output.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="175" column="10" lean-forward="true" selection-start-line="175" selection-start-column="10" selection-end-line="175" selection-end-column="10" />
-          <folding>
-            <element signature="e#322#331#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/samplerange.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1154">
-          <caret line="240" column="104" selection-start-line="240" selection-start-column="104" selection-end-line="240" selection-end-column="104" />
+        <state relative-caret-position="761">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
             <element signature="e#42#64#0" expanded="true" />
-            <element signature="e#555#820#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/data_model/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+          <folding>
+            <element signature="e#6128#6187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/data_model/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="133" column="19" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="n#style#0;n#input#1;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/parsedata.py">
+    <entry file="file://$PROJECT_DIR$/data_model/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1828">
-          <caret line="143" column="30" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="30" />
+        <state relative-caret-position="263">
+          <caret line="140" column="14" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="14" />
           <folding>
-            <element signature="e#42#53#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/matplotpaint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="164">
+          <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/parsedata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="17" />
           <folding>
-            <element signature="e#42#57#0" expanded="true" />
-            <marker date="1540891786624" expanded="true" signature="6116:6751" ph="..." />
+            <element signature="e#42#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/calculate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="453" column="13" selection-start-line="453" selection-start-column="8" selection-end-line="453" selection-end-column="13" />
+          <folding>
+            <element signature="e#42#53#0" expanded="true" />
+            <marker date="1541657429961" expanded="true" signature="18915:19465" ph="..." />
           </folding>
         </state>
       </provider>

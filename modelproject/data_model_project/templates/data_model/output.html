@@ -1,7 +1,27 @@
-{% extends "data_model/index.html" %}
+{% extends "data_model/upload.html" %}
 {% load staticfiles %}
+{% block upload %}
+<div class = "bs-example-1">
+<div class="bs-example" data-example-id="simple-s">
+
+  <div class="table-responsive">
+<form>
+    {% csrf_token %}
+  <table class="table table-condensed">
+    <tbody>
+         <td><strong>数据选择</strong></td>
+         {% for key , value in filenames.items %}
+         <td><input type="radio" value="{{value}}" name="datachoice" class="datachoice">{{key}}</td>
+         {% empty %}
+         <td>请上传文件</td>
+         {% endfor %}
+    </tbody>
+
+  </table>
+</form>
+      {% endblock upload %}
 {% block output %}
-<div class = "bs-example-3">
+<div class = "bs-example-out">
 <div class="bs-example" data-example-id="simple-s">
 
   <div class="table-responsive">

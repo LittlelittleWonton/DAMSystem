@@ -3,7 +3,7 @@
 import datetime , copy
 import pandas as pd
 import logging
-logger = logging.getLogger('scripts')
+#logger = logging.getLogger('scripts')
 class Samplerange:
     samplerange_dict={
         'all' : 6,
@@ -28,7 +28,8 @@ class Samplerange:
                 start_end_dict['end'] = end
                 sample_range_dict[sample] = copy.deepcopy(start_end_dict)
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         #print(sample_range_dict)
         return sample_range_dict
 
@@ -80,7 +81,8 @@ class Samplerange:
             days = (pd_list[-1] - pd_list[-n - 1]).days
             time_1m_ago = datetime.datetime.strftime(time_now - datetime.timedelta(days=days), '%Y-%m-%d %H:%M:%S')
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         return time_1m_ago
 
     @classmethod
@@ -122,7 +124,8 @@ class Samplerange:
             starttime = datetime.datetime.strftime(starttime, '%Y-%m-%d %H:%M:%S')
             endtime = datetime.datetime.strftime(endtime, '%Y-%m-%d %H:%M:%S')
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         return starttime, endtime
 
 #无时分秒
@@ -151,7 +154,8 @@ class Samplerange_simple:
                 sample_range_dict[sample] = copy.deepcopy(start_end_dict)
             #print(sample_range_dict)
         except Exception as e:
-            logger.error(e)
+            print(e)
+            #logger.error(e)
         return sample_range_dict
 
     @classmethod

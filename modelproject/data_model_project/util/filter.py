@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*-coding:utf-8-*-
 import logging
-logger = logging.getLogger('scripts')
+#logger = logging.getLogger('scripts')
 def calculation_filter(newcalllist,daytimelist,calltypelist,landtypelist ,phonetypelist ,phonepropertylist ,otherarealist):
     '''
     计算方式过滤器
@@ -175,7 +175,8 @@ def pic_filter(newcalllist,daytimelist,calltypelist,landtypelist ,phonetypelist 
         for ele in judge_list:
             sum+=ele.flag
     except Exception as e:
-        logger.error(e)
+        print(e)
+        #logger.error(e)
 
     if sum ==0 or sum>1:
         return step_6_list , []
