@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block head%}
+<div class="container" style="min-height:50px">
+<header></header>
+
+</div>
+{% endblock head%}
+
+{% block content %}
+
+<table class="table  table-hover " >
+    <tbody>
+    <tr class="text-center" >
+        <td style="font-size:80px; vertical-align: middle !important;text-align: center;" height="300px" class="xiugaibtn">
+            Browser
+        </td>
+    </tr>
+    <tr class="text-center span-class" id = 'upload'>
+        <td style="font-size:80px;vertical-align: middle !important;text-align: center;" height="300px"  class="upload-btn">
+            Upload
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="upload" method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="file" class="filess" multiple="multiple" name = "myfile" style="opacity: 0"/>
+<input type="submit" class = "submit-btn" style="opacity: 0"/>
+</form>
+{% endblock content %}
+
+{% block script%}
+$(".xiugaibtn").click(function () {
+            $(".filess").click();
+        });
+$(".upload-btn").click(function () {
+            $(".submit-btn").click();
+        });
+
+ $('#upload').click(function(){
+              $.ajax({
+                  url:"/",
+                  type:"POST",
+                  data:{
+                      "csrfmiddlewaretoken":$('[name="csrfmiddlewaretoken"]').val()
+                  },
+                  success:function(data){
+                      var dataObj = JSON.parse(data);
+                      console.log(dataObj["msg"]);
+                      msg = dataObj["msg"];
+
+                      $('header').html('<h1>'+msg+'</h1>');
+                  }
+              });
+          });
+
+{% endblock script%}

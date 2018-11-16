@@ -1,0 +1,89 @@
+{% extends "data_model/upload.html" %}
+{% load staticfiles %}
+{% block upload %}
+<div class = "bs-example-1">
+<div class="bs-example" data-example-id="simple-s">
+
+  <div class="table-responsive">
+<form>
+    {% csrf_token %}
+  <table class="table table-condensed">
+    <tbody>
+         <td><strong>数据选择</strong></td>
+         {% for key , value in filenames.items %}
+         <td><input type="radio" value="{{value}}" name="datachoice" class="datachoice">{{key}}</td>
+         {% empty %}
+         <td>请上传文件</td>
+         {% endfor %}
+    </tbody>
+
+  </table>
+</form>
+      {% endblock upload %}
+{% block output %}
+<div class = "bs-example-out">
+<div class="bs-example" data-example-id="simple-s">
+
+  <div class="table-responsive">
+  <table class="table table-condensed">
+    <tbody>
+    <td>
+         <table>
+         {% for image in images %}
+         <tbody>
+         <td><img src="{% static image %}"  alt="Responsive image" class="img-responsive img-rounded"></td>
+         </tbody>
+         {% empty %}
+         <tbody>
+         <td><img src="{% static images %}"  alt="Responsive image" class="img-responsive img-rounded"></td>
+         </tbody>
+         {% endfor %}
+         </table>
+    </td>
+         <td>
+		 <div class = "cellplase">
+		 <table>
+		 <tbody><td><strong>通话计数：</strong></tbody>
+             {% for key , value in count_call_dict.items%}
+			 <tbody><td></td><td>{{key}}</td><td>{{value}}次</td></tbody>
+             {% empty %}
+             <tbody><td></td><td>无结果</td></tbody>
+             {% endfor %}
+		 <tbody><td><strong>时长求和：</strong></tbody>
+             {% for key , value in sum_calllong_dict.items%}
+			 <tbody><td></td><td>{{key}}</td><td>{{value}}秒</td></tbody>
+             {% empty %}
+             <tbody><td></td><td>无结果</td></tbody>
+             {% endfor %}
+		 <tbody><td><strong>占比：<strong></td></tbody>
+             {% for key , value in ratio_dict.items%}
+			 <tbody><td></td><td>{{key}}</td><td>{{value}}</td></tbody>
+             {% empty %}
+             <tbody><td></td><td>无结果</td></tbody>
+             {% endfor %}
+		 <tbody><td><strong>分组计数：<strong></td></tbody>
+             {% for key , value in count_group_by_otherarea_dict.items%}
+			 <tbody><td></td><td>{{key}}</td></tbody>
+                 {% for d in value%}
+                     {% for k,v in d.items%}
+                         <tbody><td></td><td></td><td>{{k}}</td><td>{{v}}</td></tbody>
+                     {% empty %}
+                     <tbody><td></td><td>无结果</td></tbody>
+                     {% endfor %}
+                 {% empty %}
+                 <tbody><td></td><td>无结果</td></tbody>
+                 {% endfor %}
+             {% empty %}
+             <tbody><td></td><td>无结果</td></tbody>
+             {% endfor %}
+		 </table>
+		 </div>
+		 </td>
+
+    </tbody>
+
+  </table>
+</div>
+ </div>
+</div>
+{% endblock output %}

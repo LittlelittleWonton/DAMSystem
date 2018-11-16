@@ -1,0 +1,38 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from pylab import mpl
+mpl.rcParams['font.sans-serif']=['SimHei']
+
+fig, ax = plt.subplots(figsize=(11, 9), subplot_kw=dict(aspect="equal"))
+
+recipe = ['优', '良', '轻度污染', '中度污染','重度污染','严重污染','缺']
+
+data = [2, 49, 21, 9,11,6,2]
+colors = ['lime', 'yellow', 'darkorange', 'red','purple','maroon','grey']
+wedges, texts, texts2 = ax.pie(data, wedgeprops=dict(width=0.5), startangle=40, colors=colors, 
+                                autopct='%1.0f%%', pctdistance=0.8)
+plt.setp(texts2,size=14,weight="bold")
+
+bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72)
+kw = dict(xycoords='data', textcoords='data', arrowprops=dict(arrowstyle="->"),
+          bbox=None, zorder=0, va="center")
+
+for i, p in enumerate(wedges):
+    ang = (p.theta2 - p.theta1)/2. + p.theta1
+    y = np.sin(np.deg2rad(ang))
+    x = np.cos(np.deg2rad(ang))
+    horizontalalignment = {-1: "right", 1: "left"}[int(np.sign(x))]
+    connectionstyle = "angle,angleA=0,angleB={}".format(ang)
+    kw["arrowprops"].update({"connectionstyle": connectionstyle})
+    ax.annotate(recipe[i], xy=(x, y), xytext=(1.25*np.sign(x), 1.3*y),size=16,
+                 horizontalalignment=horizontalalignment, **kw)
+
+#ax.set_title("Matplotlib bakery: A donut")
+
+plt.show()
+#plt.savefig('jiaopie2.png')
+
+作者：晋陵小生
+链接：https://www.jianshu.com/p/ac7a580a1eed
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
