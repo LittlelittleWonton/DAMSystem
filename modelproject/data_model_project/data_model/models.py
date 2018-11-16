@@ -19,7 +19,7 @@ class Call_table(models.Model):
     phoneproperty = models.CharField(max_length = 20,null = False , blank = False, verbose_name = "号码性质")
 
     def __str__(self):
-        return self.callphone
+        return '通话记录表'
 
 class Otherarea_table(models.Model):
     '''
@@ -29,7 +29,7 @@ class Otherarea_table(models.Model):
     name = models.CharField(max_length = 30,null = False , blank = False, verbose_name = "归属地")
 
     def __str__(self):
-        return self.name
+        return '归属地表'
 
 class File_table(models.Model):
     '''
@@ -39,3 +39,5 @@ class File_table(models.Model):
     f_name = models.CharField(max_length = 40,null = False , blank = False, verbose_name = "文件名")
     otherarea_table = models.ForeignKey(Otherarea_table , blank = True , null = False , on_delete=models.CASCADE)
     call_table = models.ForeignKey(Call_table, blank = True , null = False , on_delete=models.CASCADE )
+    def __str__(self):
+        return '文件表'
